@@ -1,117 +1,168 @@
+/* Общие стили для всего сайта */
 * {
     margin: 0;
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18;
+    font-size: 1rem; /* Использование rem для лучшей гибкости */
     color: var(--color-textwebsite);
     background-color: var(--color-backcolorwebsite);
 }
-:root {
-    /* -------------------------------- */
-    --color-backcolorwebsite: #F5EBFA;
-    --color-backcolorwebsitesection: #A56ABD;
-    --color-textwebsite: #49225B;
-    --color-texttitleortext: #6E3482;
-    --color-buttonslinksbackcolor: #A56ABD;
-    --color-buttonslinkstextcolor: #F5EBFA;
-    --color-sectionbackcolor: #E7DBEF;
-    --color-sectionbordercolor: #A56ABD;
 
+/* Определения переменных цветов */
+:root {
+    --color-backcolorwebsite: #0D0D0D; /* фон сайта */
+    --color-backcolorwebsitesection: #333333; /* фон секций */
+    --color-textwebsite: #E0E0E0; /* основной текст */
+    --color-texttitleortext: #00FF7F; /* заголовки/важный текст */
+    --color-buttonslinksbackcolor: #1DB954; /* фон кнопок/ссылок */
+    --color-buttonslinkstextcolor: #0D0D0D; /* текст на кнопках */
+    --color-sectionbackcolor: #1A1A1A; /* фоновый цвет секций */
+    --color-sectionbordercolor: #228B22; /* цвет рамок вокруг секций */
 }
+
+/* Заголовки h1 */
 h1 {
     color: var(--color-texttitleortext);
-    font-size: 40px;
+    font-size: 2.5rem; /* Использование rem для адаптивности */
     text-align: center;
     padding: 5px;
+    margin: 10px 0;
 }
+
+/* Заголовок с рамкой */
 .h1_1 {
-    border-top: 6px solid var(--color-sectionbordercolor);
+    border-top: 6px solid var(--color-sectionbordercolor); /* Уменьшена толщина рамки */
     border-bottom: 6px solid var(--color-sectionbordercolor);
 }
+
+/* Стили для контейнера div_1 */
 .div_1 {
     padding: 4px;
-    border-left: 6px solid var(--color-sectionbordercolor);
+    border-left: 6px solid var(--color-sectionbordercolor); /* Уменьшена толщина рамки */
     border-right: 6px solid var(--color-sectionbordercolor);
 }
+
+/* Стили для ссылок */
 a {
-    font-size: 18px;
+    font-size: 1rem;
     text-decoration: none;
-    font-style: none;
     border-radius: 3px;
-    padding: 2px;
+    padding: 2px 6px;
     background-color: var(--color-buttonslinksbackcolor);
     color: var(--color-buttonslinkstextcolor);
     font-style: italic;
+    transition: all 0.3s ease;
 }
+
 a:hover {
-    border: 3px solid var(--color-textwebsite);
+    background-color: var(--color-texttitleortext);
+    color: var(--color-backcolorwebsite);
+    border: 2px solid var(--color-textwebsite); /* Уменьшена толщина рамки */
     padding-left: 4px;
     padding-right: 4px;
 }
+
+/* Стили для объекта div_2 */
 .veryobjectdiv_2 {
     padding: 4px;
 }
+
 .objectdiv_2 {
     padding: 4px;
-    border-top: 6px solid var(--color-sectionbordercolor);
+    border-top: 6px solid var(--color-sectionbordercolor); /* Уменьшена толщина рамки */
     border-bottom: 6px solid var(--color-sectionbordercolor);
 }
+
 .div_2 {
     display: flex;
     background-color: var(--color-sectionbackcolor);
-    border-left: 6px solid var(--color-sectionbordercolor);
+    border-left: 6px solid var(--color-sectionbordercolor); /* Уменьшена толщина рамки */
     border-right: 6px solid var(--color-sectionbordercolor);
     justify-content: space-around;
     padding: 5px;
 }
-/* ----------------------------------------------------------------------- */
+
+/* Стили для объектов с прокруткой */
 .veryobjectdiv_3 {
     padding: 4px;
-    border-left: 6px solid var(--color-sectionbordercolor);
+    border-left: 6px solid var(--color-sectionbordercolor); /* Уменьшена толщина рамки */
     border-right: 6px solid var(--color-sectionbordercolor);
 }
+
 .div-scroll::-webkit-scrollbar {
     display: none;
 }
+
 .objectdiv_3 {
     display: flex;
     padding: 4px;
-    border-top: 6px solid var(--color-sectionbordercolor);
+    border-top: 6px solid var(--color-sectionbordercolor); /* Уменьшена толщина рамки */
     border-bottom: 6px solid var(--color-sectionbordercolor);
     height: 800px;
     max-width: 100%;
     max-height: 800px;
     overflow: auto;
     -ms-overflow-style: none;
-    scrollbar-width: none; 
+    scrollbar-width: none;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .div_3 {
     height: auto;
     max-width: 1000px;
 }
-/* ----------------------------------------------------------------------- */
-.veryobjectfooter  {
-    padding: 4px;
-    border-top: 6px solid var(--color-sectionbordercolor);
+
+/* Стили для футера */
+.veryobjectfooter {
+    padding: 10px; /* Увеличиваем отступы для футера */
+    border-top: 6px solid var(--color-sectionbordercolor); /* Уменьшена толщина рамки */
     border-bottom: 6px solid var(--color-sectionbordercolor);
 }
+
 .objectfooter {
     padding: 20px;
-    border-top: 6px solid var(--color-sectionbordercolor);
+    border-top: 6px solid var(--color-sectionbordercolor); /* Уменьшена толщина рамки */
     border-bottom: 6px solid var(--color-sectionbordercolor);
 }
+
 .divfooter {
     display: flex;
+    flex-wrap: wrap; /* Это позволяет элементам располагаться в несколько строк */
     padding: 40px;
-    border-left: 6px solid var(--color-sectionbordercolor);
+    border-left: 6px solid var(--color-sectionbordercolor); /* Уменьшена толщина рамки */
     border-right: 6px solid var(--color-sectionbordercolor);
-    height: 90px;
+    justify-content: space-around; /* Пространство между элементами */
+    gap: 20px; /* Устанавливаем промежуток между кнопками/ссылками */
+    height: auto; /* Делаем высоту динамической */
     max-width: 100%;
-    max-height: 300px;
-    justify-content: space-around;
 }
+
+.divfooter ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем оборачивание ссылок */
+    gap: 20px; /* Добавляем промежутки между ссылками */
+}
+
 .divfooter li {
     list-style: none;
+}
+
+.divfooter a {
+    text-decoration: none;
+    color: var(--color-textwebsite);
+    padding: 5px 10px; /* Увеличиваем отступы для улучшения кликабельности */
+    border-radius: 5px;
+    background-color: var(--color-buttonslinksbackcolor);
+    transition: background-color 0.3s ease;
+}
+
+.divfooter a:hover {
+    background-color: var(--color-texttitleortext);
+    color: var(--color-backcolorwebsite);
+    padding-left: 6px;
+    padding-right: 6px;
 }
