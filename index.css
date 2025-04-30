@@ -1,12 +1,12 @@
 :root {
-    --color-backcolorwebsite: #0D0D0D;
-    --color-backcolorwebsitesection: #333333;
+    --color-backcolorwebsite: #121212;
+    --color-backcolorwebsitesection: #1E1E1E;
     --color-textwebsite: #E0E0E0;
-    --color-texttitleortext: #00FF7F;
-    --color-buttonslinksbackcolor: #1DB954;
-    --color-buttonslinkstextcolor: #0D0D0D;
-    --color-sectionbackcolor: #1A1A1A;
-    --color-sectionbordercolor: #228B22;
+    --color-texttitleortext: #66CC99;
+    --color-buttonslinksbackcolor: #2E8B57;
+    --color-buttonslinkstextcolor: #FFFFFF;
+    --color-sectionbackcolor: #222222;
+    --color-sectionbordercolor: #3CB371;
 }
 
 * {

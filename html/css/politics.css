@@ -1,12 +1,12 @@
 :root {
-    --color-backcolorwebsite: #0D0D0D; /* фон сайта */
-    --color-backcolorwebsitesection: #333333; /* фон секций */
-    --color-textwebsite: #E0E0E0; /* основной текст */
-    --color-texttitleortext: #00FF7F; /* заголовки/важный текст */
-    --color-buttonslinksbackcolor: #1DB954; /* фон кнопок/ссылок */
-    --color-buttonslinkstextcolor: #0D0D0D; /* текст на кнопках */
-    --color-sectionbackcolor: #1A1A1A; /* фоновый цвет секций */
-    --color-sectionbordercolor: #228B22; /* цвет рамок вокруг секций */
+    --color-backcolorwebsite: #121212;
+    --color-backcolorwebsitesection: #1E1E1E;
+    --color-textwebsite: #E0E0E0;
+    --color-texttitleortext: #66CC99;
+    --color-buttonslinksbackcolor: #2E8B57;
+    --color-buttonslinkstextcolor: #FFFFFF;
+    --color-sectionbackcolor: #222222;
+    --color-sectionbordercolor: #3CB371;
 }
 
 * {
